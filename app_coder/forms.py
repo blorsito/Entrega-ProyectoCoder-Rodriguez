@@ -1,30 +1,23 @@
 import datetime
 from django import forms
 from django.forms import ModelForm
-from app_coder.models import Profesor
 
 
-class CourseForm(forms.Form):
+class FarmaciaForm(forms.Form):
     name = forms.CharField(max_length=40, min_length=3, label='Nombre')
-    code = forms.IntegerField(label='Camada')
+    address = forms.CharField(max_length=40, min_length=3, label='Direccion')
+    phonenumber = forms.IntegerField(label='Telefono')
 
 
-class ProfesorForm(forms.Form):
+class FarmaceuticoForm(forms.Form):
     name = forms.CharField(max_length=40, min_length=3, label='Nombre')
-    last_name = forms.CharField(max_length=40, label='Apellido')
-    email = forms.EmailField(label='Correo electrónico')
-    profession = forms.CharField(max_length=40, label='Profesión')
+    matricula = forms.IntegerField(label='Matricula')
+   
 
-# class ProfesorForm(ModelForm):
-#     class Meta:
-#         model = Profesor
-#         fields = '__all__'
+class MedicamentoForm(forms.Form):
+    name = forms.CharField(max_length=40, min_length=3, label='Nombre del medicamento')
+    precio = forms.IntegerField(label='Precio')
 
-
-class HomeworkForm(forms.Form):
-    name = forms.CharField(max_length=40, min_length=3, label='Nombre de la Entrega')
-    due_date = forms.DateField(
-        label='Fecha de Entrega',
-        widget=forms.TextInput(attrs={'placeholder': 'yyyy-mm-dd'})
-    )
-    is_delivered = forms.BooleanField(label='Entregado', required=False)
+class ClienteForm(forms.Form):
+    name = forms.CharField(max_length=40, min_length=3, label='Nombre')
+    obra_social = forms.CharField(max_length=40, min_length=3, label='Obra social')

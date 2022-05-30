@@ -1,0 +1,17 @@
+{% extends "app_coder/index.html" %}
+{% load static %}
+{% block app_coder_content %}
+
+<h2>Lista de Medicamentos</h2>
+<a class="card_custom" href="{% url 'app_coder:MedicamentoDjangoForms' %}">Crear nueva medicamento</a>
+<hr></hr>
+<ul>
+    {% for medicamento in medicamentos %}
+        <li>
+            Medicamento: {{medicamento.name}}
+            -- Precio: {{medicamento.precio}}
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

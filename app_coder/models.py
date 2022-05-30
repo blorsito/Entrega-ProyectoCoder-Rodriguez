@@ -1,38 +1,35 @@
 from django.db import models
 
 
-class Course(models.Model):
+class Farmacia(models.Model):
     name = models.CharField(max_length=40)
-    code = models.IntegerField()
+    address = models.CharField(max_length=40)
+    phonenumber = models.IntegerField()
 
     def __str__(self):
-        return f'{self.name} course --'
+        return f' Nombre de la farmacia: {self.name} -- Direccion: {self.address} -- Telefono: {self.phonenumber}'
 
 
-class Student(models.Model):
+class Cliente(models.Model):
     name = models.CharField(max_length=40)
-    last_name = models.CharField(max_length=40)
-    email = models.EmailField()
+    obra_social = models.CharField(max_length=40)
 
     def __str__(self):
-        return f'Nombre del Estudiante: {self.name} {self.last_name} -- e-mail: {self.email}'
+        return f'Nombre del Estudiante: {self.name} -- Obra social: {self.obra_social}'
 
 
-class Profesor(models.Model):
+class Farmaceutico(models.Model):
     name = models.CharField(max_length=40)
-    last_name = models.CharField(max_length=40)
-    email = models.EmailField()
-    profession = models.CharField(max_length=40)
+    matricula = models.IntegerField()
+    
 
     def __str__(self):
-        return f'Nombre del Profesor: {self.name} {self.last_name} -- e-mail: {self.email} -- profesión: {self.profession} --'
+        return f'Nombre del Farmaceutico: {self.name} -- Matricula: {self.matricula}'
 
 
-class Homework(models.Model):
+class Medicamento(models.Model):
     name = models.CharField(max_length=40)
-    due_date = models.DateField()
-    is_delivered = models.BooleanField()
+    precio = models.IntegerField()
 
     def __str__(self):
-        is_delivered = 'Si' if self.is_delivered else 'No'
-        return f'Nombre de la Entrega: {self.name} -- Fecha de entrega: {self.due_date} -- Entregado: {is_delivered}'
+        return f'Nombre del medicamento: {self.name} -- Precio: {self.precio}'

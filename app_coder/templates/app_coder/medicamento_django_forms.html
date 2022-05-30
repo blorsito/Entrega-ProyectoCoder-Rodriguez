@@ -2,15 +2,15 @@
 {% load static %}
 {% block app_coder_content %}
 
-<h2>Formulario para insersión de una nueva Entrega</h2>
+<h2>Formulario para insersión de un nuevo medicamento</h2>
 <hr></hr>
 
 <form action="" method="POST">
     {% csrf_token %}
 
-    {{ homework_form.as_p }}
+    {{ medicamento_form.as_p }}
 
-    <input type="submit" class="btn btn-primary" value="Crear entrega" />
+    <input type="submit" class="btn btn-primary" value="Crear medicamento" />
 
 </form>
 

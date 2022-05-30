@@ -5,16 +5,15 @@ from app_coder import views
 app_name='app_coder'
 urlpatterns = [
     path('', views.index, name='Home'),
-    path('profesors', views.profesors, name='Profesors'),
-    # path('courses', views.courses, name='course-list'),
-    path('students', views.students, name='Students'),
-    path('homeworks', views.homeworks, name='Homeworks'),
+    path('farmacias', views.farmacias, name = 'Farmacias'),
+    path('farmaceuticos', views.farmaceuticos, name='Farmaceuticos'),
+    path('clientes', views.clientes, name='Clientes'),
+    path('medicamentos', views.medicamentos, name='Medicamentos'),
     path('formHTML', views.form_hmtl),
-    path('course-django-forms', views.course_forms_django, name='CourseDjangoForms'),
-    path('profesor-django-forms', views.profesor_forms_django, name='ProfesorDjangoForms'),
-    path('profesor/<int:pk>/update', views.update_profesor, name='UpdateProfesor'),
-    path('profesor/<int:pk>/delete', views.delete_profesor, name='DeleteProfesor'),
-    path('homework-django-forms', views.homework_forms_django, name='HomeworkDjangoForms'),
+    path('farmacia-django-forms', views.farmacia_forms_django, name='FarmaciaDjangoForms'),
+    path('farmaceutico-django-forms', views.farmaceutico_forms_django, name='FarmaceuticosDjangoForms'),
+    path('medicamento-django-forms', views.medicamento_forms_django, name='MedicamentoDjangoForms'),
+    path('cliente-django-forms', views.cliente_forms_django, name='ClienteDjangoForms'),
     path('search', views.search, name='Search'),
 
 
@@ -33,9 +32,4 @@ urlpatterns = [
     #
     # Acá se ve la forma clara cómo Django realiza de forma stándar los nombres para urls, views y name del path.
 
-    path('courses', views.CourseListView.as_view(), name='course-list'),
-    path('course/add/', views.CourseCreateView.as_view(), name='course-add'),
-    path('course/<int:pk>/detail', views.CourseDetailView.as_view(), name='course-detail'),
-    path('course/<int:pk>/update', views.CourseUpdateView.as_view(), name='course-update'),
-    path('course/<int:pk>/delete', views.CourseDeleteView.as_view(), name='course-delete'),
 ]

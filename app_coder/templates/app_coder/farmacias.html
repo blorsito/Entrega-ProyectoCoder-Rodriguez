@@ -1,0 +1,18 @@
+{% extends "app_coder/index.html" %}
+{% load static %}
+{% block app_coder_content %}
+
+<h2>Lista de Farmacias</h2>
+<a class="card_custom" href="{% url 'app_coder:FarmaciaDjangoForms' %}">Crear nuevo Farmacia</a>
+<hr></hr>
+<ul>
+    {% for farmacia in farmacias %}
+        <li>
+            Farmacia: {{farmacia.name}}
+            -- Direccion: {{farmacia.address}}
+            -- Telefono: {{farmacia.phonenumber}}
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
