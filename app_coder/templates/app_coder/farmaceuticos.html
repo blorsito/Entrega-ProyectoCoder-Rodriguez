@@ -9,8 +9,16 @@
 <ul>
     {% for farmaceutico in farmaceuticos %}
         <li>
-            Farmaceutico: {{farmaceutico.name}}
-            -- Matricula: {{farmaceutico.matricula}}
+            {{farmaceutico}}
+            (
+        <a href="{% url 'app_coder:UpdateFarmaceutico' farmaceutico.id %}">
+            <i class="fa fa-pencil" style="color: rgb(5, 221, 70);"></i>
+        </a>
+        |
+        <a href="{% url 'app_coder:DeleteFarmaceutico' farmaceutico.id %}">
+            <i class="fa fa-trash" style="color: rgb(228, 7, 7);"></i>
+        </a>
+        )
         </li>
     {% endfor %}
 </ul>
