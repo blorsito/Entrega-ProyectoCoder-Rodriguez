@@ -1,9 +1,9 @@
 import datetime
 from django import forms
 from django.forms import ModelForm
+from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from app_coder.models import Avatar
-
 
 class FarmaciaForm(forms.Form):
     name = forms.CharField(max_length=40, min_length=3, label='Nombre')

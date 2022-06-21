@@ -243,7 +243,7 @@ def medicamento_forms_django(request):
             return render(
                 request=request,
                 context=context_dict,
-                template_name="app_coder/medicamento.html"
+                template_name="app_coder/medicamentos.html"
             )
 
     medicamento_form = MedicamentoForm(request.POST)
