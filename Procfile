@@ -1,1 +1,1 @@
-web: gunicorn coderhouse-project-django.wsgi
+web: gunicorn coderhouse_project.wsgi
