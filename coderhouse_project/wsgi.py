@@ -1,5 +1,5 @@
 """
-WSGI config for coderhouse-project project.
+WSGI config for coderhouse_project project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
