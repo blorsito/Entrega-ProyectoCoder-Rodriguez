@@ -322,21 +322,22 @@ class FarmaciaDetailView(DetailView):
     template_name = "app_coder/farmacia_detail.html"
 
 
-class FarmaciaCreateView(CreateView):
+class FarmaciaCreateView(LoginRequiredMixin, CreateView):
     model = Farmacia
     success_url = reverse_lazy('app_coder:farmacia-list')
     fields = ['name', 'address', 'phonenumber']
 
 
-class FarmaciaUpdateView(UpdateView):
+class FarmaciaUpdateView(LoginRequiredMixin, UpdateView):
     model = Farmacia
     success_url = reverse_lazy('app_coder:farmacia-list')
     fields = ['name', 'address', 'phonenumber']
 
 
-class FarmaciaDeleteView(DeleteView):
+class FarmaciaDeleteView(LoginRequiredMixin, DeleteView):
     model = Farmacia
     success_url = reverse_lazy('app_coder:farmacia-list')
+    fields = ['name', 'address', 'phonenumber']
 
 
 from django.shortcuts import redirect
