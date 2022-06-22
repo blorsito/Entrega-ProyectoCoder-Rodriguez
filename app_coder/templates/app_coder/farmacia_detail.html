@@ -2,11 +2,11 @@
 {% load static %}
 {% block app_coder_content %}
 
-<h2>Detalle del Farmacia</h2>
+<h2>Detalle de la Farmacia</h2>
 <hr></hr>
 <p><h3>Curso: {{ farmacia.name }}</h3></p>
-<p><h4>Direccion: {{ farmacia.address }}</h4></p>
-<p><h5>Telefono: {{ farmacia.phonenumber }}</h5></p>
+<p><h4>Dirección: {{ farmacia.address }}</h4></p>
+<p><h5>Teléfono: {{ farmacia.phonenumber }}</h5></p>
 
 <p><a class="btn2 btn-primary" href="{% url 'app_coder:farmacia-list' %}">Regresar a la lista de farmacias</a></p>
 {% endblock %}

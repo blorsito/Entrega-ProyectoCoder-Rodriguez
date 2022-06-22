@@ -8,7 +8,7 @@ class Farmacia(models.Model):
     phonenumber = models.IntegerField()
 
     def __str__(self):
-        return f' Nombre de la farmacia: {self.name} -- Direccion: {self.address} -- Telefono: {self.phonenumber}'
+        return f' Nombre de la farmacia: {self.name} -- Dirección: {self.address} -- Teléfono: {self.phonenumber}'
 
 
 class Cliente(models.Model):
@@ -16,7 +16,7 @@ class Cliente(models.Model):
     obra_social = models.CharField(max_length=40)
 
     def __str__(self):
-        return f'Nombre del Estudiante: {self.name} -- Obra social: {self.obra_social}'
+        return f'Nombre del cliente: {self.name} -- Obra social: {self.obra_social}'
 
 
 class Farmaceutico(models.Model):
@@ -25,7 +25,7 @@ class Farmaceutico(models.Model):
     
 
     def __str__(self):
-        return f'Nombre del Farmaceutico: {self.name} -- Matricula: {self.matricula}'
+        return f'Nombre del Farmacéutico: {self.name} -- Matrícula: {self.matricula}'
 
 
 class Medicamento(models.Model):
