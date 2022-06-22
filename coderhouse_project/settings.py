@@ -82,7 +82,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'coderhouse-project.wsgi.application'
+WSGI_APPLICATION = 'coderhouse-project-django.wsgi.application'
 
 
 # Database
