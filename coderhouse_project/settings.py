@@ -33,10 +33,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 
-# SECURITY WARNING: keep the secret key used in production secret!
+# # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-+t%tet&*xl)4bf+53@rqbv^l6opf7ft&zwao&(i^%q&9*#r(%k'
 
-# SECURITY WARNING: don't run with debug turned on in production!
+# # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -82,7 +82,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'coderhouse_project.wsgi.application'
+WSGI_APPLICATION = 'coderhouse-project.wsgi.application'
 
 
 # Database
