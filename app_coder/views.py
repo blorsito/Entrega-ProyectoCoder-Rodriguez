@@ -230,6 +230,7 @@ def medicamento_forms_django(request):
         medicamento_form = MedicamentoForm(request.POST)
         if medicamento_form.is_valid():
             data = medicamento_form.cleaned_data
+            
             medicamento = Medicamento(
                 name=data['name'],
                 precio=data['precio'],
