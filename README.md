@@ -1,3 +1,15 @@
+
+# Proyecto Curso Python CoderHouse
+```bash
+Este proyecto fue realizado por Paolo Colloca y Pablo Rodríguez como entrega final para el curso dictado durante marzo, abril,
+mayo y junio de 2022.
+En este blog se encuentra información sobre farmacias, farmacéuticos, clientes y obras sociales de la provincia de Buenos Aires.
+Tiene un login donde podes registrarte y elegir un avatar para tu cuenta. Se puede agregar, editar y eliminar farmacias con todos
+sus datos. El usuario tambien puede agregar, editar y eliminar farmacéuticos. 
+
+Ver online: https://coderproject-django-pcpr.herokuapp.com/app_coder/
+```
+
 # Instrucciones para ejecutar este proyecto
 
 - Clonar el proyecto y cambiar de rama
