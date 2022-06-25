@@ -1,0 +1,16 @@
+Prueba con crear obra social
+
+# Una pequeña muestra de procesos de unit test
+            KEY_LEN = 4
+            char_list = [random.choice(string.ascii_letters) for _ in range(KEY_LEN)]
+            obrasocial = ''.join(char_list)
+            print(f'----------> Prueba con: {obrasocial}')
+
+
+            cliente = Cliente(
+                name=data['name'],
+                obra_social=obrasocial,
+            )
+
+Obra social ingreada: "SWIS" 
+Resultado arrojado: "----------> Prueba con: GOGY"

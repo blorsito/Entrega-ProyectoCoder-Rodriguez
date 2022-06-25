@@ -1,0 +1,15 @@
+Prueba con crear numero de telefono de una farmacia
+
+# Una pequeña muestra de procesos de unit test
+            KEY_LEN = 10
+            char_list = [random.choice(string.digits) for _ in range(KEY_LEN)]
+            numtel = ''.join(char_list)
+            print(f'----------> Prueba con: {numtel}')
+
+            farmacia = Farmacia(
+                name=data['name'],
+                address=data['address'],
+                phonenumber=numtel,
+            )
+Numero ingresado: "3123131333"
+Resultado arrojado: No devuelve el print con un numero random. Deja el mismo numero ingresado. Fue probado en jupyter y arrojaba otro numero random de 10 digitos.
