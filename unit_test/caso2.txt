@@ -12,4 +12,5 @@ Prueba con crear numero de telefono de una farmacia
                 phonenumber=numtel,
             )
 Numero ingresado: "3123131333"
+Resultado esperado: Que devuelva un numero de telefono random con 10 caracteres.
 Resultado arrojado: No devuelve el print con un numero random. Deja el mismo numero ingresado. Fue probado en jupyter y arrojaba otro numero random de 10 digitos.

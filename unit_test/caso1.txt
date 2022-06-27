@@ -13,5 +13,6 @@ Prueba con crear farmaceutico
             )
 
 Nombre ingresado: "Del Monte"
+Resultado esperado: Que devuelva un nombre random de 20 caracteres.
 Resultado arrojado: "----------> Prueba con: rEbfyFmJUSmsKi8jvunb"
 

@@ -12,5 +12,6 @@ Prueba con crear obra social
                 obra_social=obrasocial,
             )
 
-Obra social ingreada: "SWIS" 
+Obra social ingreada: "SWIS"
+Resultado esperado: Que devuelva una obra social random de 4 caracteres.
 Resultado arrojado: "----------> Prueba con: GOGY"
