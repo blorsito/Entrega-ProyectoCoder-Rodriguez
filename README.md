@@ -7,7 +7,7 @@ En este blog se encuentra información sobre farmacias, farmacéuticos, clientes
 Tiene un login donde podes registrarte y elegir un avatar para tu cuenta. Se puede agregar, editar y eliminar farmacias con todos
 sus datos. El usuario tambien puede agregar, editar y eliminar farmacéuticos. 
 
-Ver online: https://coderproject-django-pcpr.herokuapp.com/app_coder/
+Ver online: https://coderproject-django-pcpr.herokuapp.com/
 
 Video: https://youtu.be/lv1q4YZKjm4
 ```
