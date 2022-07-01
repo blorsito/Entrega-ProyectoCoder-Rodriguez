@@ -449,3 +449,14 @@ def avatar_load(request):
         context={"form": form},
         template_name="app_coder/avatar_form.html",
     )
+
+def about(request):
+    """About context."""
+
+    context = {
+        'title': 'About',
+        'message': 'Bienvenido al Blog de Farmacias',
+        'subtitle': 'About'
+        }
+    return render(request, 'app_coder/about.html', context)
+
