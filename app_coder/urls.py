@@ -15,6 +15,7 @@ urlpatterns = [
     path('medicamento-django-forms', views.medicamento_forms_django, name='MedicamentoDjangoForms'),
     path('cliente-django-forms', views.cliente_forms_django, name='ClienteDjangoForms'),
     path('search', views.search, name='Search'),
+    path('about', views.about, name='About'),
 
 
     # Dajngo documentation -->  https://docs.djangoproject.com/en/4.0/topics/class-based-views/generic-editing/
