@@ -1,0 +1,30 @@
+{% extends "app_coder/index.html" %}
+{% load static %}
+{% block app_coder_content %}
+
+<div class="w3-container w3-indigo w3-round-large w3-padding-16 w3-center">
+    <h1>{{title}}</h1>
+</div>
+
+
+<div class="w3-container w3-round-large w3-padding-16 w3-margin-top w3-margin-bottom">
+    <div class="w3-card-4 w3-margin-top">
+        <header class="w3-container">
+            <h1>Acerca de mi:</h1>
+        </header>
+        <div class="w3-container">
+            <h4>Me gusta mucho todo lo que tiene que ver con la tecnología.</h4>
+            <h4>Desde pequeño siempre me ha asombrado lo que se puede lograr por medio de una computadora y la manera de darle instrucciones a la misma.
+                Por cuestiones de la vida, años mas tarde he vuelto a esta pasión que tengo con las expectativas de poder trabajar de lo que me gusta.
+                Siempre trato de mantenerme informado sobre las nuevas herramientas que van surgiendo, leyendo, participando en foros, etc.
+                Este blog es parte de la entrega final del curso de Coderhouse sobre Python, donde se utiliza Django.
+            </h4>
+        </div>
+</div>
+<!-- Botones -->
+<div class="w3-bar w3-padding-32 w3-center">
+    <a button type="button" class="w3-button w3-round-large w3-large w3-indigo" style="color:yellow" href=" {% url 'app_coder:Home' %} ">Volver</button></a>
+</div>
+
+
+{% endblock %}
