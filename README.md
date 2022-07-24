@@ -15,7 +15,7 @@ Ver online: https://coderproject-django-pcpr.herokuapp.com/
 
 - Clonar el proyecto y cambiar de rama
 ```bash
-git clone https://github.com/blorsito/Entrega1-Colloca-Rodriguez.git
+git clone https://github.com/blorsito/Entrega-ProyectoCoder-Rodriguez.git
 
 cd django-coderhouse-project
 
